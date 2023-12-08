@@ -1,5 +1,5 @@
-jongo@dmbot:~/Desktop/test/Jongo $ arduino-cli core install arduino:mbed_nano
-Tool arduino:openocd@0.11.0-arduino2 already installed
+jongo@dmbot:~/Desktop/test/Jongo $ arduino-cli core install arduino:mbed_nano    
+Tool arduino:openocd@0.11.0-arduino2 already installed  
 Tool arduino:arm-none-eabi-gcc@7-2017q4 already installed
 Tool arduino:bossac@1.9.1-arduino2 already installed
 Tool arduino:dfu-util@0.10.0-arduino1 already installed
