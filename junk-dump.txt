@@ -1,0 +1,31 @@
+jongo@dmbot:~/Desktop/test/Jongo $ arduino-cli core install arduino:mbed_nano
+Tool arduino:openocd@0.11.0-arduino2 already installed
+Tool arduino:arm-none-eabi-gcc@7-2017q4 already installed
+Tool arduino:bossac@1.9.1-arduino2 already installed
+Tool arduino:dfu-util@0.10.0-arduino1 already installed
+Tool arduino:rp2040tools@1.0.6 already installed
+Downloading packages...
+arduino:mbed_nano@4.0.10 arduino:mbed_nano@4.0.10 already downloaded
+Installing platform arduino:mbed_nano@4.0.10...
+Configuring platform....
+Please run as root
+
+Platform arduino:mbed_nano@4.0.10 installed
+jongo@dmbot:~/Desktop/test/Jongo $ sudo arduino-cli core install arduino:mbed_nano
+Platform arduino:mbed_nano@4.0.10 already installed
+jongo@dmbot:~/Desktop/test/Jongo $ arduino-cli compile --fqbn arduino:mbed_nano:nanorp2040connect
+Sketch uses 90495 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 43488 bytes (16%) of dynamic memory, leaving 226848 bytes for local variables. Maximum is 270336 bytes.
+
+Used platform     Version Path                                                             
+arduino:mbed_nano 4.0.10  /home/jongo/.arduino15/packages/arduino/hardware/mbed_nano/4.0.10
+jongo@dmbot:~/Desktop/test/Jongo $ ls
+Jongo.ino
+jongo@dmbot:~/Desktop/test/Jongo $ arduino-cli compile --upload -p /dev/ttyACM0 -b arduino:mbed_nano:nanorp2040connect
+Sketch uses 90495 bytes (0%) of program storage space. Maximum is 16777216 bytes.
+Global variables use 43488 bytes (16%) of dynamic memory, leaving 226848 bytes for local variables. Maximum is 270336 bytes.
+...
+
+Used platform     Version Path                                                             
+arduino:mbed_nano 4.0.10  /home/jongo/.arduino15/packages/arduino/hardware/mbed_nano/4.0.10
+jongo@dmbot:~/Desktop/test/Jongo $ 
